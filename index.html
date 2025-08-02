@@ -1,77 +1,249 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Wince Achieng - Portfolio</title>
+   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ 
 </head>
-<body>
+ <body>
   <header>
     <h1>Wince Achieng</h1>
     <nav>
-        <a href="#Home">Hi</a>
+      <a href="#Home">Home</a>
       <a href="#about">About</a>
-      <a href="#languages">Languages</a>
+      <a href="#languages">Skills</a>
       <a href="#education">Education</a>
       <a href="#interests">Interests</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  <section id="Home">
-    <h2 >Hi <span>I'm Wince Achieng</span></h2>
-    <p>Turning Imaginations into reality is what I do best.</p>
+
+  
+
+  <section id="about" class="section">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer with a love for turning ideas into interactive, user-friendly experiences. I enjoy building solutions that solve real-world problems and push the boundaries of what's possible on the web.</p>
+      <p>Driven by curiosity and purpose, I'm constantly exploring new technologies, improving my skills, 
+        and embracing challenges that help me grow. From front-end interfaces to back-end logic, 
+        I take pride in writing clean, efficient code and creating responsive, accessible websites.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>100+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-card">
+        <h3>2+</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat-card">
+        <h3>100+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-card">
+        <h3>400+</h3>
+        <p>Customer Reviews</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="languages" class="section">
+    <div class="section-card">
+      <h2>Technical Skills</h2>
+      <div class="skills-category">
+    <h3>Frontend Development</h3>
+    <div class="skills-icons">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+        <span>Next.js</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+        <span>React</span>
+      </div>
+      <div class="skill-item">
+        <img src="Images/shadcn-ui-seeklogo.png" alt="ShadCN UI" />
+        <span>ShadCN UI</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="Material UI" />
+        <span>Material UI</span>
+      </div>
+      <div class="skill-item">
+        <img src="Images/css-3.png" alt="CSS" />
+        <span>CSS</span>
+      </div>
+    </div>
+  </div>
+
+       <div class="skills-category">
+    <h3>Backend Development</h3>
+    <div class="skills-icons">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
+        <span>Python Django</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+        <span>Node.js</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
+        <span>FastAPI</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048943.png" alt="REST APIs" />
+        <span>REST APIs</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/906/906361.png" alt="Web Socket" />
+        <span>Web Socket</span>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="skills-category">
+    <h3>Database Technologies</h3>
+    <div class="skills-icons">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+        <span>Mongo</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+        <span>MySQL</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+        <span>PostgreSQL</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" />
+        <span>SQLite</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+        <span>Redis</span>
+      </div>
+      
+      <div class="skills-category">
+    <h3>Agile & Collaboration Tools</h3>
+    <div class="skills-icons">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+        <span>Git</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111615.png" alt="Slack" />
+        <span>Slack</span>
+      </div>
+      <div class="skill-item">
+        <img src="Images/jira.png" alt="Jira" />
+        <span>Jira</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://miro.com/favicon.ico" alt="Miro" />
+        <span>Miro</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Microsoft Teams" />
+        <span>MS Teams</span>
+      </div>
+    </div>
+    </div>
   </section>
 
-  <section id="about">
-    <h2 >About Me</h2>
-    <p>I’m a passionate web developer who loves building solutions and learning new technologies. I’m driven by curiosity, purpose, and the desire to grow every day.</p>
+  <section id="education" class="section">
+    <div class="section-card">
+      <h2>Education</h2>
+      <p>BSc in Computer Science – University of Nairobi</p>
+      <p>Focused on software engineering, data structures, and web technologies.</p>
+      <a href="#" class="cta-button">Download My CV</a>
+    </div>
   </section>
 
-  <section id="languages">
-    <h2>Programming Languages</h2>
-    <ol>
-      <li>HTML</li>
-      <li>CSS</li> 
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>TypeScript</li>
-    </ol>
+  <section id="interests"class="section">
+    <div class="section-card">
+      <h2>Tech Interests</h2>
+      <p>I enjoy solving problems with code, especially in web development, AI, and data analysis. I'm particularly passionate about using technology to empower women and support education in Africa, creating meaningful impact through innovative solutions.</p>
+    </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p>BSc in Computer Science – University of Nairobi</p>
-    <a href="resume.pdf" download>Download My CV</a>
+  <section id="projects" class="section">
+    <div class="section-card">
+      <h2>Featured Projects</h2>
+      <ul class="projects-grid">
+        <li class="project-card">
+          <a href="#" target="_blank">E-Commerce Platform</a>
+          <p>A full-stack web application with user authentication, product management, and secure payment processing. Built with modern technologies for optimal performance.</p>
+        </li>
+        <li class="project-card">
+          <a href="#" target="_blank">Transaction Reconciliation System</a>
+          <p>Automated financial reconciliation tool that streamlines transaction matching and reporting, reducing manual processing time by 80%.</p>
+        </li>
+        <li class="project-card">
+          <a href="#" target="_blank">QR Code Attendance Tracker</a>
+          <p>Smart attendance system using QR code technology for educational institutions, featuring real-time tracking and comprehensive analytics.</p>
+        </li>
+      </ul>
+    </div>
   </section>
 
-  <section id="interests">
-    <h2>Tech Interests</h2>
-    <p>I enjoy solving problems with code, especially in web development, AI, and data analysis. I'm also interested in using tech to empower women and support education in Africa.</p>
+  <section id="contact" class="section">
+    <div class="section-card">
+      <h2>Let's Connect</h2>
+      <form class="contact-form" action="mailto:winceogola20@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <section id="Home" class="section">
+    <div class="home-content">
+      <div class="home-image">
+        <img src="Images/myself.jpeg" alt="Wince Achieng">
+      </div>
+      <div class="home-text">
+        <h2>Hi, <span>I'm Wince Achieng</span></h2>
+        <p>Turning Imaginations into Reality Through Code</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/wince/project1" target="_blank">Student Attendance App</a> – A web app that tracks class attendance using QR codes.</li>
-      <li><a href="https://github.com/wince/project2" target="_blank">Weather App</a> – Fetches live weather data using an API and displays it beautifully.</li>
-    </ul>
-  </section>
+  <!-- <footer>
+    <p>© 2025 Wince Achieng | 
+      <a href="https://www.linkedin.com/in/winceogola/">LinkedIn</a> |
+      <a href="https://github.com/wince824">GitHub</a>
+    </p>
+  </footer> -->
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+ <script>
+    function setActive(clickedLink) {
+      // Remove active class from all nav links
+      document.querySelectorAll('nav a').forEach(link => {
+        link.classList.remove('active');
+      });
+      
+      // Add active class to clicked link
+      clickedLink.classList.add('active');
+    }
 
-  <footer>
-    <p>© 2025 Wince Achieng | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
-  </footer>
+    // Set Home as active by default
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('nav a[href="#Home"]').classList.add('active');
+    });
+  </script>
 </body>
 </html>
