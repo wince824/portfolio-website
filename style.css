@@ -64,7 +64,7 @@ nav a.active {
 /* Main Container */
 .main-container {
   margin-top: 80px;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   position: relative;
   overflow: hidden;
 }
@@ -74,12 +74,15 @@ nav a.active {
   position: absolute;
   top: 0;
   left: 50%;
+  right: 0;
+  margin: 0 auto;
   transform: translateX(-50%) translateY(-100%);
   opacity: 0;
   width: 100%;
   height: 100%;
   padding: 60px 20px;
-  max-width: 900px;
+   overflow-x: hidden;
+   max-width: 100vw;
   background: linear-gradient(135deg, #0e0b20, #1e1b33, #0e0b20);
   overflow-y: auto;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -446,4 +449,195 @@ h2::after {
   color: #ccc;
   font-size: 0.95rem;
   text-align: center;
+}
+#education {
+  margin: 2rem 0;
+}
+
+.education-entry {
+  margin-bottom: 2rem;
+}
+
+.coursework-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.02)
+}
+
+.coursework-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+
+.coursework-card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #1a1730;
+  border: 1px solid rgba(166, 108, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(166, 108, 255, 0.08);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.project-btn {
+  background-color: #a66cff;
+  color: white;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.project-btn:hover {
+  background-color: #8a54e3;
+}
+.companies-showcase {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.companies-showcase h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #a66cff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.company-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(166, 108, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(166, 108, 255, 0.15);
+}
+
+.company-card h4 {
+  color: #a66cff;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.company-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+.company-logo {
+  max-width: 160px;
+  max-height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #ece3e9;
+  font-size: 28px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff; /* theme color */
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
